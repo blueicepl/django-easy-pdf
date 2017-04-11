@@ -36,8 +36,8 @@ setup(
     include_package_data=True,
     install_requires=[
         "django>=1.5.1",
-        "xhtml2pdf>=0.0.6",
-        "reportlab>=2.1,<3"
+        "xhtml2pdf==1.0b10",
+        "reportlab"
     ],
     zip_safe=False,
     keywords="django-easy-pdf",
