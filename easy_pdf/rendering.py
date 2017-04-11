@@ -157,7 +157,7 @@ def render_to_pdf_response(request, template, context, filename=None,
     :rtype: :class:`django.http.HttpResponse`
     """
 
-    if not isinstance(context, Context):
+    if not isinstance(context, Context) and django.VERSION <= 1.9:
         if request is not None:
             context = RequestContext(request, context)
         else:
